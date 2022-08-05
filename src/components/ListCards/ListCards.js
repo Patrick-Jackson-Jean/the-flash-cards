@@ -3,6 +3,6 @@ import React from 'react';
 
 export default function ListCards () {
   return (
-    <>ListCards</>
+    <h3>ListCards</h3>
   );
 }

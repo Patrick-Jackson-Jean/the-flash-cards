@@ -10,7 +10,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        
+        <FlashCard />
+        <ListCards />
+        <EditCard />
+        <CreateCard />
       </header>
     </div>
   );

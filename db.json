@@ -1,0 +1,24 @@
+{
+  "decks": [
+    {
+      "deckId": 1,
+      "title": "multiply",
+      "cards": [{"cardId": 1, "front": "1 x 1 = ?", "back": "1"}, {"cardId": 2, "front": "2 x 2 = ?", "back": "4"}, {"cardId": 3, "front": "3 x 3 = ?", "back": "9"}, {"cardId": 4, "front": "4 x 4 = ?", "back": "16"}, {"cardId": 5, "front": "5 x 5 = ?", "back": "25"}, {"cardId": 6, "front": "6 x 6 = ?", "back": "36"}, {"cardId": 7, "front": "7 x 7 = ?", "back": "49"}, {"cardId": 8, "front": "8 x 8 = ?", "back": "64"}, {"cardId": 9, "front": "9 x 9 = ?", "back": "81"}, {"cardId": 10, "front": "10 x 10 = ?", "back": "100"}]
+    },
+    {
+      "deckId": 2,
+      "title": "add",
+      "cards": [{"cardId": 1, "front": "1 + 1 = ?", "back": "2"}, {"cardId": 2, "front": "2 + 2 = ?", "back": "4"}, {"cardId": 3, "front": "3 + 3 = ?", "back": "6"}, {"cardId": 4, "front": "4 + 4 = ?", "back": "8"}, {"cardId": 5, "front": "5 + 5 = ?", "back": "10"}, {"cardId": 6, "front": "6 + 6 = ?", "back": "12"}, {"cardId": 7, "front": "7 + 7 = ?", "back": "14"}, {"cardId": 8, "front": "8 + 8 = ?", "back": "16"}, {"cardId": 9, "front": "9 + 9 = ?", "back": "18"}, {"cardId": 10, "front": "10 + 10 = ?", "back": "20"}]
+    },
+    {
+      "deckId": 3,
+      "title": "subtract",
+      "cards": [{"cardId": 1, "front": "1 - 1 = ?", "back": "0"}, {"cardId": 2, "front": "2 - 2 = ?", "back": "0"}, {"cardId": 3, "front": "3 - 3 = ?", "back": "0"}, {"cardId": 4, "front": "4 - 4 = ?", "back": "0"}, {"cardId": 5, "front": "5 - 5 = ?", "back": "0"}, {"cardId": 6, "front": "6 - 6 = ?", "back": "0"}, {"cardId": 7, "front": "7 - 7 = ?", "back": "0"}, {"cardId": 8, "front": "8 - 8 = ?", "back": "0"}, {"cardId": 9, "front": "9 - 9 = ?", "back": "0"}, {"cardId": 10, "front": "10 - 10 = ?", "back": "0"}]
+    },
+    {
+      "deckId": 4,
+      "title": "divide",
+      "cards": [{"cardId": 1, "front": "1 / 1 = ?", "back": "1"}, {"cardId": 2, "front": "2 / 2 = ?", "back": "1"}, {"cardId": 3, "front": "3 / 3 = ?", "back": "1"}, {"cardId": 4, "front": "4 / 4 = ?", "back": "1"}, {"cardId": 5, "front": "5 / 5 = ?", "back": "1"}, {"cardId": 6, "front": "6 / 6 = ?", "back": "1"}, {"cardId": 7, "front": "7 / 7 = ?", "back": "1"}, {"cardId": 8, "front": "8 / 8 = ?", "back": "1"}, {"cardId": 9, "front": "9 / 9 = ?", "back": "1"}, {"cardId": 10, "front": "10 / 10 = ?", "back": "1"}]
+    }
+  ]
+}
