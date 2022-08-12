@@ -3,6 +3,7 @@ import React from 'react';
 
 export default function EditCard () {
   return (
-    <>EditCard</>
+    <h3>EditCard</h3>
+    
   );
 }
