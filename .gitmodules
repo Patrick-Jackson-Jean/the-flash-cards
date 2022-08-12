@@ -1,0 +1,3 @@
+[submodule "the-flash-cards"]
+	path = the-flash-cards
+	url = https://github.com/Patrick-Jackson-Jean/the-flash-cards.git
