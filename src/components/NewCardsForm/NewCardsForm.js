@@ -2,6 +2,7 @@ import './NewCardsForm.css';
 import React, { useState } from 'react';
 import CreateCard from '../CreateCard/CreateCard';
 import {BsPlusSquare} from 'react-icons/bs'
+import { Link } from 'react-router-dom';
 
 export default function NewCardsForm ({closeNewForm, submitCards}) {
   const [newCards, setNewCards] = useState([])
@@ -22,7 +23,7 @@ export default function NewCardsForm ({closeNewForm, submitCards}) {
   }
   return (
     <form className='create-many-cards' onSubmit={(e)=> submitCards(newCards, e)}>
-      <p className="close" onClick={closeNewForm}>X</p>
+      <Link to={"/"} className="close" onClick={closeNewForm}>X</Link>
       {newCardForms}
       <BsPlusSquare className='add-card' onClick={addCard}/>
       <button>Submit Cards</button>
