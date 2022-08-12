@@ -1,0 +1,26 @@
+/* Dark green ccd5ae
+   Light green e9edc9
+   white fefae0
+   light tan faedcd
+   tan d4a373
+*/
+
+.create-card {
+  align-self: center;
+  display: flex;
+  flex-flow: column;
+  background-color: #ccd5ae;
+  color: #144b1b;
+  padding: 2em;
+  width: 50%;
+  border-radius: 5px;
+
+}
+
+.create-card input {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  margin: 10px;
+  color: #144b1b;
+}
