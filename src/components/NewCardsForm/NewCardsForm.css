@@ -1,0 +1,51 @@
+.create-many-cards {
+  align-self: center;
+  margin: 25px;
+  display: flex;
+  flex-flow: column;
+  width: 75%;
+  background-color: #e9edc9;
+  border-radius: 10px;
+  padding: 3%;
+  height: 90%;
+  overflow-y: scroll;
+  /* position: fixed; */
+}
+
+.close {
+  cursor: pointer;
+  align-self: flex-start;
+  /* margin: 100px; */
+  /* position: fixed; */
+  font-size: 2em;
+  color: #0b3a11;
+}
+
+.create-many-cards form {
+  margin: 10px;
+}
+
+.add-card {
+  cursor: pointer;
+  align-self: center;
+  /* margin-top: 50px; */
+  /* position: sticky; */
+  font-size: 3em;
+  /* height: 1em; */
+  /* width: 1em; */
+  color: #144b1b;
+}
+
+.create-many-cards button {
+  width: 15%;
+  background-color: transparent;
+  align-self: center;
+  margin: 20px;
+  padding: 5px;
+  color: #144b1b;
+  border: 3px solid;
+  font-size: 1.1em;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
