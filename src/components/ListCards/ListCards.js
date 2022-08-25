@@ -2,10 +2,10 @@ import "./ListCards.css";
 import React, { useState } from "react";
 import FlashCard from "../FlashCard/FlashCard";
 
-export default function ListCards({ cards, submitEdit }) {
-
+export default function ListCards({ cards, submitEdit, deleteCard }) {
+  console.log(cards)
   const cardList = cards.map(({ front, back, id }) => {
-    return <FlashCard key={id} front={front} back={back} id={id} edit={submitEdit} />;
+    return <FlashCard key={id} front={front} back={back} id={id} edit={submitEdit} deleteCard={deleteCard}/>;
     // return <h2>{front} {back} {id}</h2>
   });
 
@@ -22,6 +22,6 @@ export default function ListCards({ cards, submitEdit }) {
   };
 
   return (
-    <div>{cardList}</div>
+    <div className="cards">{cardList}</div>
   );
 }
