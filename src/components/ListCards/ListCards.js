@@ -1,6 +1,6 @@
 import "./ListCards.css";
 import React from "react";
-import FlashCard from "../FlashCard/FlashCard";
+import FlashCard from "../FlashCard/Flashcard";
 
 export default function ListCards({ cards, beginEdit, deleteCard }) {
   console.log(cards)
