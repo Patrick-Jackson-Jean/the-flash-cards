@@ -1,7 +1,7 @@
 import "./FlashCard.css";
 import React, { useState } from "react";
 import { FiEdit, FiTrash2, FiCornerUpRight } from "react-icons/fi";
-import { useNavigate, Link, Route, Routes } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 export default function FlashCard({ front, back, id, edit, deleteCard }) {
   const [isFlipped, setIsFlipped] = useState(false);
