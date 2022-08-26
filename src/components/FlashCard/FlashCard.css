@@ -31,3 +31,22 @@
     justify-content: space-between;
     width: 90%;
 }
+
+.card input {
+    padding: 15px;
+    border-radius: 5px;
+    border: none;
+    font-size: .75em;
+    color: #144b1b;
+}
+
+.card button {
+    background-color: transparent;
+    align-self: center;
+    margin: 20px;
+    color: #144b1b;
+    border: 3px solid;
+    font-size: .75em;
+    border-radius: 5px;
+    cursor: pointer;
+}
