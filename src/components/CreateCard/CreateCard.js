@@ -1,5 +1,5 @@
 import './CreateCard.css';
-import React, {useState} from 'react';
+import React from 'react';
 
 export default function CreateCard ({updateCard, id}) {
   console.log(id)

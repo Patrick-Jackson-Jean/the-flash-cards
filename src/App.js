@@ -1,11 +1,11 @@
 import "./App.css";
 import React, { useState } from "react";
-import FlashCard from "./components/FlashCard/FlashCard";
+// import FlashCard from "./components/FlashCard/FlashCard";
 import { DeleteCard } from "./components/DeleteCard/DeleteCard";
 import ListCards from "./components/ListCards/ListCards";
 import EditCard from "./components/EditCard/EditCard";
 import NewCardsForm from "./components/NewCardsForm/NewCardsForm";
-import { BrowserRouter as Router, Routes, Route, Link, useNavigate } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 function App() {
   const [newCards, setNewCards] = useState([
