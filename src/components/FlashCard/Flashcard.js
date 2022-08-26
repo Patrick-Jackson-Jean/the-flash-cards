@@ -14,6 +14,7 @@ export default function FlashCard({ front, back, id, edit, deleteCard }) {
 
   const notEditing = (
     <div className="card-body">
+      <h5 className="side">{!isFlipped ? "Question" : "Answer"}</h5>
       <h5 className="card-front">{!isFlipped ? front : back}</h5>
     </div>
   );
@@ -29,7 +30,7 @@ export default function FlashCard({ front, back, id, edit, deleteCard }) {
       <form onSubmit={(e) => {
         setIsEdit(false)
         edit(newCard, e)
-        navigate("/")
+        navigate("/EditCard")
         }}>
       <h5 className="card-front">
         <input
@@ -55,8 +56,11 @@ export default function FlashCard({ front, back, id, edit, deleteCard }) {
   return (
     <div className="card" >
       <div className="top-btn">
-        <FiEdit onClick={() => setIsEdit(!isEdit)} className="card-btn"/>
-        <FiCornerUpRight className="card-btn" onClick={() => setIsFlipped(!isFlipped)}/>
+        <FiEdit onClick={() => setIsEdit(!isEdit)} className="card-btn"></FiEdit>
+        <div onClick={() => setIsFlipped(!isFlipped)}>
+          <FiCornerUpRight className="card-btn" ></FiCornerUpRight>
+          <p className="card-btn flip-text">Flip Card</p>
+        </div>
       </div>
       {!isEdit ? notEditing : beingEdited}
       <Link to="/DeleteCard"><FiTrash2 className="card-btn" onClick={() => deleteCard(id)}/></Link>

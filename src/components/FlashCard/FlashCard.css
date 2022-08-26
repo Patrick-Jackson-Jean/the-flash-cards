@@ -17,10 +17,13 @@
     font-size: 3em;
     font-weight: bold;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 .card-btn {
-    font-size: 1.7em;
+    font-size: 1.9em;
     cursor: pointer;
     text-decoration: none;
     color: #0b3a11
@@ -30,6 +33,18 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
+}
+.flip-text {
+    font-size: 1.4em;
+    margin: 0px 5px;
+}
+
+.card h5 {
+    margin: 15px 0px;
+}
+
+.side {
+    font-size: .6em;
 }
 
 .card input {
