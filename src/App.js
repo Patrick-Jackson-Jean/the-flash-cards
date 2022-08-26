@@ -14,6 +14,7 @@ function App() {
     { id: 3, front: "3 x 3 = ?", back: "9" },
   ]);
   const [deleteId, setDeleteId] = useState()
+  const [cardChange, setCardChange] = useState()
   // const navigate = useNavigate()
   const submitCards = (cards, e) => {
     e.preventDefault();
@@ -25,8 +26,7 @@ function App() {
     // navigate("/")
   };
 
-  const submitEdit = (card, e) => {
-    e.preventDefault();
+  const submitEdit = (card) => {
     const cardToEdit = newCards.findIndex((c) => c.id === card.id);
     const newCardUpdate = newCards;
     newCardUpdate[cardToEdit] = card;
@@ -47,6 +47,11 @@ function App() {
     setDeleteId(id)
   }
 
+  const setupCardChanges = (newCard, e) => {
+    e.preventDefault()
+    setCardChange(newCard)
+  }
+
   return (
     <Router>
       <div className="App">
@@ -59,8 +64,8 @@ function App() {
           </Link>
         </header>
         <Routes>
-          <Route path="/" element={<ListCards cards={newCards} deleteCard={setupDeleteId} submitEdit={submitEdit} />} />
-          {/* <Route path="/EditCard" element={<EditCard />} /> */}
+          <Route path="/" element={<ListCards cards={newCards} deleteCard={setupDeleteId} beginEdit={setupCardChanges} />} />
+          <Route path="/EditCard" element={<EditCard newCard={cardChange} submitEdit={submitEdit} />} />
           <Route
             path="/CreateCards"
             element={<NewCardsForm submitCards={submitCards} />}
