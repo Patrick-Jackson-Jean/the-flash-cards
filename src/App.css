@@ -1,7 +1,8 @@
-.App {
+.App, html {
   text-align: center;
   display: flex;
   flex-direction: column;
+  background-color: #e9edc9;
 }
 
 
@@ -41,6 +42,13 @@
   text-decoration: none;
   cursor: pointer;
   color: #0b3a11;
+}
+
+.create-btn {
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 5px;
+
 }
 
 @keyframes App-logo-spin {

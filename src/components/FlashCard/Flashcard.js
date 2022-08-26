@@ -1,11 +1,13 @@
 import "./FlashCard.css";
 import React, { useState } from "react";
-import { FiEdit } from "react-icons/fi";
+import { FiEdit, FiTrash2, FiCornerUpRight } from "react-icons/fi";
+import { useNavigate, Link, Route, Routes } from "react-router-dom";
 
-export default function FlashCard({ front, back, id, edit }) {
+export default function FlashCard({ front, back, id, edit, deleteCard }) {
   const [isFlipped, setIsFlipped] = useState(false);
   const [isEdit, setIsEdit] = useState(false);
   const [newCard, setNewCard] = useState({ front, back, id });
+  const navigate = useNavigate()
   console.log(front, back);
   // if the card is flipped, show the back of the card
   // otherwise, show the front of the card
@@ -24,7 +26,11 @@ export default function FlashCard({ front, back, id, edit }) {
 
   const beingEdited = (
     <div className="card-body">
-      <form onSubmit={(e) => edit(newCard, e)}>
+      <form onSubmit={(e) => {
+        setIsEdit(false)
+        edit(newCard, e)
+        navigate("/")
+        }}>
       <h5 className="card-front">
         <input
           type="text"
@@ -47,9 +53,13 @@ export default function FlashCard({ front, back, id, edit }) {
   );
 
   return (
-    <div className="card" onClick={() => setIsFlipped(!isFlipped)}>
-      <FiEdit onClick={() => setIsEdit(!isEdit)} />
+    <div className="card" >
+      <div className="top-btn">
+        <FiEdit onClick={() => setIsEdit(!isEdit)} className="card-btn"/>
+        <FiCornerUpRight className="card-btn" onClick={() => setIsFlipped(!isFlipped)}/>
+      </div>
       {!isEdit ? notEditing : beingEdited}
+      <Link to="/DeleteCard"><FiTrash2 className="card-btn" onClick={() => deleteCard(id)}/></Link>
     </div>
   );
 }
