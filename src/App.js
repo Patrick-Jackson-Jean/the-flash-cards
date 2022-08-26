@@ -1,6 +1,5 @@
 import "./App.css";
 import React, { useState } from "react";
-// import FlashCard from "./components/FlashCard/FlashCard";
 import { DeleteCard } from "./components/DeleteCard/DeleteCard";
 import ListCards from "./components/ListCards/ListCards";
 import EditCard from "./components/EditCard/EditCard";
